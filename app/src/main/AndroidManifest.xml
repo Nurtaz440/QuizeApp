@@ -11,22 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".QuestionActivity5"
-            android:launchMode="singleInstance"
+
             android:theme="@style/Theme.Question5"/>
         <activity android:name=".QuestionActivity4"
-            android:launchMode="singleInstance"
+
             android:theme="@style/Theme.Question4"/>
         <activity android:name=".QuestionActivity3"
-            android:launchMode="singleInstance"
+
             android:theme="@style/Theme.Question3"/>
         <activity android:name=".Question2Activity"
-            android:launchMode="singleInstance"
+
             android:theme="@style/Theme.Question2"
             />
         <activity android:name=".MainActivity"
-            android:launchMode="singleInstance"
+
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

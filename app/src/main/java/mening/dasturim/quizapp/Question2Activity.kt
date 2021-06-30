@@ -1,5 +1,6 @@
 package mening.dasturim.quizapp
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,42 +27,63 @@ class Question2Activity : AppCompatActivity() {
     //    val meesege=intent.getIntExtra("score",0)
       //  bindingQuestion2Binding.textView5.setText(meesege)
 
-        bindingQuestion2Binding.radioGroup2.setOnCheckedChangeListener{group, checkedId ->
-            val radioButton=findViewById<RadioButton>(checkedId)
 
-            if (radioButton.isClickable){
-                bindingQuestion2Binding.nextInvisible.visibility= View.INVISIBLE
+        bindingQuestion2Binding.radioBtn1.isChecked = Update("one")
+        bindingQuestion2Binding.radioBtn2.isChecked = Update("two")
+        bindingQuestion2Binding.radioBtn3.isChecked = Update("three")
+        bindingQuestion2Binding.radioBtn4.isChecked = Update("four")
+        bindingQuestion2Binding.radioBtn5.isChecked = Update("five")
 
-                when(checkedId) {
-                    R.id.radio_btn1 -> {
-                        bindingQuestion2Binding.textView5.text = 0.toString()
 
-                    }
+        bindingQuestion2Binding.radioBtn1.setOnCheckedChangeListener { buttonView, OneisChecked ->
 
-                    R.id.radio_btn2 -> {
-                        bindingQuestion2Binding.textView5.text = 0.toString()
+            SaveIntoSharedPrefe("one",OneisChecked)
+            if (bindingQuestion2Binding.radioBtn1.isClickable){
+                bindingQuestion2Binding.nextInvisible.visibility=View.INVISIBLE
 
-                    }
-
-                    R.id.radio_btn3 -> {
-                        bindingQuestion2Binding.textView5.text = 0.toString()
-
-                    }
-
-                    R.id.radio_btn4 -> {
-                        bindingQuestion2Binding.textView5.text = 20.toString()
-
-                    }
-
-                    R.id.radio_btn5 -> {
-                        bindingQuestion2Binding.textView5.text = 0.toString()
-
-                    }
-                }
-
-                }
+            }
 
         }
+
+
+        bindingQuestion2Binding.radioBtn2.setOnCheckedChangeListener { buttonView, TwoisChecked ->
+
+            SaveIntoSharedPrefe("two",TwoisChecked)
+            if (bindingQuestion2Binding.radioBtn2.isClickable){
+                bindingQuestion2Binding.nextInvisible.visibility=View.INVISIBLE
+
+            }
+        }
+
+
+        bindingQuestion2Binding.radioBtn3.setOnCheckedChangeListener { buttonView, threeChecked ->
+
+            SaveIntoSharedPrefe("three",threeChecked)
+            if (bindingQuestion2Binding.radioBtn3.isClickable){
+                bindingQuestion2Binding.nextInvisible.visibility=View.INVISIBLE
+            }
+        }
+
+
+        bindingQuestion2Binding.radioBtn4.setOnCheckedChangeListener { buttonView, fourisChecked ->
+
+            SaveIntoSharedPrefe("four",fourisChecked)
+            if (bindingQuestion2Binding.radioBtn4.isClickable){
+                bindingQuestion2Binding.nextInvisible.visibility=View.INVISIBLE
+            }
+        }
+
+
+        bindingQuestion2Binding.radioBtn5.setOnCheckedChangeListener { buttonView, fiveisChecked ->
+
+            SaveIntoSharedPrefe("five",fiveisChecked)
+            if (bindingQuestion2Binding.radioBtn5.isClickable){
+                bindingQuestion2Binding.nextInvisible.visibility=View.INVISIBLE
+            }
+        }
+
+
+
 
         bindingQuestion2Binding.nextVisible.setOnClickListener {
             val intent= Intent (this,QuestionActivity3::class.java)
@@ -77,5 +99,21 @@ class Question2Activity : AppCompatActivity() {
         }
 
             bindingQuestion2Binding.textView5.visibility=View.GONE
+    }
+    fun SaveIntoSharedPrefe(key:String,value:Boolean){
+
+
+        val sharedPreferenceEditor=getSharedPreferences("save", Context.MODE_PRIVATE).edit()
+        sharedPreferenceEditor.putBoolean(key,value)
+        sharedPreferenceEditor.apply()
+
+
+    }
+
+
+    fun   Update(key:String):Boolean{
+        val sharedPreferences=getSharedPreferences("save", Context.MODE_PRIVATE)
+        return sharedPreferences.getBoolean(key,false)
+
     }
 }

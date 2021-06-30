@@ -126,6 +126,7 @@
             android:layout_height="wrap_content"
             android:text="@string/shanghai_tower_shanghai"
             android:textColor="@color/black"
+            android:buttonTint="@drawable/question_clicked2"
             />
 
         <RadioButton
@@ -134,6 +135,7 @@
             android:layout_height="wrap_content"
             android:text="@string/burj_khalifa_dubai"
             android:textColor="@color/black"
+            android:buttonTint="@drawable/question_clicked2"
             />
 
         <RadioButton
@@ -142,6 +144,7 @@
             android:layout_height="wrap_content"
             android:text="@string/trump_international_hotel_chicago"
             android:textColor="@color/black"
+            android:buttonTint="@drawable/question_clicked2"
             />
 
         <RadioButton
@@ -149,6 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/central_park_tower_new_york"
+            android:buttonTint="@drawable/question_clicked2"
             android:textColor="@color/black"
             />
 
@@ -157,6 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/eiffel_tower_pairs"
+            android:buttonTint="@drawable/question_clicked2"
             android:textColor="@color/black"
             />
 

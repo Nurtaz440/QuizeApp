@@ -44,7 +44,7 @@
 
     <style name="Theme.Question4" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">#DC2C2C</item>
         <item name="colorPrimaryVariant">@color/blue</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->

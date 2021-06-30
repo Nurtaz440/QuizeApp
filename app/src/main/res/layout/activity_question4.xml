@@ -121,7 +121,7 @@
 
         <RadioButton
             android:id="@+id/radio_btn1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/discord"
             android:textColor="@color/black"
@@ -129,7 +129,7 @@
 
         <RadioButton
             android:id="@+id/radio_btn2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/slack"
             android:textColor="@color/black"
@@ -137,7 +137,7 @@
 
         <RadioButton
             android:id="@+id/radio_btn3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/kotlin"
             android:textColor="@color/black"
@@ -145,7 +145,7 @@
 
         <RadioButton
             android:id="@+id/radio_btn4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/microsoftteams"
             android:textColor="@color/black"
@@ -153,7 +153,7 @@
 
         <RadioButton
             android:id="@+id/radio_btn5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/telegram"
             android:textColor="@color/black"

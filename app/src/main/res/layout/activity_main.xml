@@ -118,13 +118,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/to_be"
+            android:buttonTint="@drawable/question_clicked"
             android:textColor="@color/black"
+            tools:ignore="UnusedAttribute"
             />
 
         <RadioButton
             android:id="@+id/radio_btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked"
             android:text="@string/nor_to_be"
             android:textColor="@color/black"
             />
@@ -133,6 +136,7 @@
             android:id="@+id/radio_btn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked"
             android:text="@string/i_don_t_know"
             android:textColor="@color/black"
             />
@@ -141,6 +145,7 @@
             android:id="@+id/radio_btn4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked"
             android:text="@string/it_s_not_my_problem"
             android:textColor="@color/black"
             />
@@ -149,6 +154,7 @@
             android:id="@+id/radio_btn5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked"
             android:text="@string/that_is_the_question"
             android:textColor="@color/black"
             />

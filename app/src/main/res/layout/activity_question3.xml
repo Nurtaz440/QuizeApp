@@ -121,40 +121,45 @@
 
         <RadioButton
             android:id="@+id/radio_btn1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked3"
             android:text="@string/cat"
             android:textColor="@color/black"
             />
 
         <RadioButton
             android:id="@+id/radio_btn2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/elephant"
+            android:buttonTint="@drawable/question_clicked3"
             android:textColor="@color/black"
             />
 
         <RadioButton
             android:id="@+id/radio_btn3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked3"
             android:text="@string/kitti_s_hog_nosed_bat"
             android:textColor="@color/black"
             />
 
         <RadioButton
             android:id="@+id/radio_btn4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked3"
             android:text="@string/antarctic_blue_whale"
             android:textColor="@color/black"
             />
 
         <RadioButton
             android:id="@+id/radio_btn5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@drawable/question_clicked3"
             android:text="@string/human"
             android:textColor="@color/black"
             />

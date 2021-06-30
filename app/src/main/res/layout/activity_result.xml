@@ -30,7 +30,7 @@
         android:layout_marginTop="144dp"
         android:layout_marginEnd="132dp"
         android:layout_marginRight="132dp"
-        android:text="bb"
+        android:text="@string/bb"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
